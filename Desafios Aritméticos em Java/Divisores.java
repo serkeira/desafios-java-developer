@@ -57,21 +57,15 @@ public class Divisores {
 		Integer valueC = Integer.parseInt(splitIntoFourNumbers[2]);
 		Integer valueD = Integer.parseInt(splitIntoFourNumbers[3]);
 
-		Integer start = 0;
-		Integer end = 0;
-
-		if (valueA != valueB && valueC != valueD) {
-			start = valueA;
-			end = valueC;
-		}
+		Integer end = valueC;
 
 		Set<Integer> finalSet = new HashSet<>();
-		
+
 		// para evitar timeout com números muito grandes
 		IntStream stream = IntStream.range(valueA, end + 1);
-		IntStream stream2 = stream.filter(element -> valueC % element == 0);
-		IntStream filteredStream = stream2.filter(element -> element % valueA == 0);
-		
+		stream = stream.filter(element -> valueC % element == 0);
+		IntStream filteredStream = stream.filter(element -> element % valueA == 0);
+
 		filteredStream.parallel().forEach(element -> {
 			if (checkIfAllConditionsMatch(element, valueA, valueB, valueC, valueD) != -1) {
 				finalSet.add(element);
