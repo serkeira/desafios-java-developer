@@ -39,7 +39,7 @@ cada letra do alfabeto, mas sim aquela que irá trazer a maior economia de carac
 | Exemplo de Entrada | Exemplo de Saída |
 |--------------------|------------------|
 | abcdef abc abc     | a. abc abc ab    |
-| abc         		 | 1                |
+| abc                | 1                |
 | .                  | a. = abcdef      |
 |---------------------------------------|
 
