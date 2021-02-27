@@ -33,6 +33,14 @@ import java.util.SortedMap;
 import java.util.TreeMap;
 
 public class ContagemRepetida {
+	
+	/**
+	 *
+	 * Solução por: Lucas Cerqueira Linkedin:
+	 * https://www.linkedin.com/in/cerqueiralucas/
+	 * 
+	 * Qualquer dúvida sobre o raciocínio, me adicione!
+	 */
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
